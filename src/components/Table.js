@@ -17,7 +17,7 @@ class Table extends Component {
 
         for(let r = 0; r < rows; r++){
             for(let c = 0; c < columns; c++){
-            this.columnElements.push(!thFlag || c == 0? <th key={'c'+c+' - r'+r}>holaTH</th> : <td key={'c'+c+' - r'+r}>{'col'+c+' - row'+r}</td>); 
+            this.columnElements.push(!thFlag || c === 0 ? <th key={'c'+c+' - r'+r}>holaTH</th> : <td key={'c'+c+' - r'+r}>{'col'+c+' - row'+r}</td>); 
             }
 
             this.rowElements.push(<tr key={'row'+r}>{this.columnElements}</tr>);
